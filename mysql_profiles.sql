@@ -12,11 +12,20 @@ show databases;
 创建用户并授权:
 grant all privileges on xnps.* to xnps@'%' identified by 'xnps@2017!@#';
 
-139.224.198.238@xnps   xnps/xnps@2017!@#
-
-
-impdp system/kingdee@orcl directory=databak dumpfile=db20170112001.dmp log=2017-01-12impdp.log REMAP_SCHEMA=kingdee:kingdeetest
-
+139.224.198.238@xnps   xnps/xnps@2017!@#   mysql root用户密码：jksoft@2017
 
 JAVA_HOME=/usr/java/jdk1.8.0_112 PATH=$JAVA_HOME/bin:$PATH CLASSPATH=$JAVA_HOME/jre/lib/ext:$JAVA_HOME/lib/tools.jar export PATH JAVA_HOME CLASSPATH
+
+//------------
+****** oracle导入语句
+****** 
+****** 
+-------------//
+impdp system/kingdee@orcl directory=databak dumpfile=db20170112001.dmp log=2017-01-12impdp.log REMAP_SCHEMA=kingdee:kingdeetest
+
+//------------
+****** oracle导入语句
+****** 
+****** 
+-------------//
 
